@@ -4,15 +4,11 @@ var ReactDOM = require('react-dom');
 
 ReactDOM.render(
   React.createElement(DateTime, {
-    renderAddOn: function(closeCalendar) {
-      return React.createElement(
-        'button',
-        {
-          onClick: closeCalendar,
-        },
-        'test',
-      );
-    },
+    viewMode: 'months',
+    dateFormat: 'MMMM',
+    isValidDate: function(current) {
+      return current.isBefore(DateTime.moment().startOf('month'));
+    }
   }),
-  document.getElementById('datetime'),
+  document.getElementById('datetime')
 );
