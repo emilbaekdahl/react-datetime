@@ -135,16 +135,16 @@
   border-top: 1px solid #f9f9f9;
 }
 
-.rdtPicker button {
+.rdtPicker .button {
   border: none;
   background: none;
   cursor: pointer;
 }
-.rdtPicker button:hover {
+.rdtPicker .button:hover {
   background-color: #eee;
 }
 
-.rdtPicker thead button {
+.rdtPicker thead .button {
   width: 100%;
   height: 100%;
 }
