@@ -449,7 +449,7 @@ var Datetime = createClass({
 		return React.createElement( 'div', { className: className }, children.concat(
 			React.createElement( 'div',
 				{ key: 'dt', className: 'rdtPicker' },
-				React.createElement( CalendarContainer, { view: this.state.currentView, viewProps: this.getComponentProps(), onClickOutside: this.handleClickOutside })
+				React.createElement( CalendarContainer, { view: this.state.currentView, viewProps: this.getComponentProps(), onClickOutside: this.handleClickOutside, closeCalendar: this.closeCalendar, renderAddon: this.props.renderAddon })
 			)
 		));
 	}
