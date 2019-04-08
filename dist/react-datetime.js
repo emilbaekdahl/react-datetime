@@ -506,6 +506,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 			if ( this.state.open )
 				className += ' rdtOpen';
+			if ( this.props.top )
+				className += ' top';
 
 			return React.createElement( 'div', { className: className }, children.concat(
 				React.createElement( 'div',
